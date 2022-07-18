@@ -1,0 +1,30 @@
+/* style footer */
+.foot1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.ulnavfoot {
+    list-style: none;
+    display: flex;
+    padding-right: 550px;
+}
+
+.liulnavfoot {
+    font-size: 110%;
+    margin-right: 5px;
+}
+
+.foot2 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 110%;
+}

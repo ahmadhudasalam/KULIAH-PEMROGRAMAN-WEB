@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2 - JavaScript</title>
+    <script>
+        function kurstousd(){
+            let amountidr = document.getElementById("amountidr").value;
+            let converttousd = amountidr / 14650.0;
+
+            document.getElementById("resultusd").value = String("USD "+ converttousd);
+        }
+        function kurstoidr(){
+            let amountusd = document.getElementById("amountusd").value;
+            let converttoidr = amountusd * 14650.0;
+
+            document.getElementById("resultidr").value = String("Rp. " + converttoidr);
+        }
+    </script>
+</head>
+<body>
+    <h2 style="text-align: center;">Menghitung Nilai Kurs Dollar - Rupiah</h2>
+    <div style="width: 30%; margin: auto; display: flex;">
+        <!--IDR TO USD-->
+        <table style="border: solid black; background-color: aquamarine; position: relative; margin-right: auto;">
+            <tr>
+                <td>
+                    <label for="amountidr">Amount</label>
+                    <br>
+                    <input type="number" id="amountidr" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="idr">From</label>
+                    <br>
+                    <input type="text" id="idr" readonly value="IDR- Indonesian Rupiah">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="usd">To</label>
+                    <br>
+                    <input type="text" id="usd" readonly value="USD - US Dollar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="kurstousd()">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="resultusd">Result</label>
+                    <br>
+                    <input type="text" id="resultusd" readonly>
+                </td>
+            </tr>
+        </table>
+        <!-- END OF IDR TO USD-->
+
+        <!--USD TO IDR-->
+        <table style="border: solid black; background-color: skyblue;">
+            <tr>
+                <td>
+                    <label for="amountusd">Amount</label>
+                    <br>
+                    <input type="number" id="amountusd" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="usd">From</label>
+                    <br>
+                    <input type="text" id="usd" readonly value="USD - US Dollar">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="idr">To</label>
+                    <br>
+                    <input type="text" id="idr" readonly value="IDR - Indonesian Rupiah">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="kurstoidr()">Convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="resultidr">Result</label>
+                    <br>
+                    <input type="text" id="resultidr" readonly>
+                </td>
+            </tr>
+        </table>
+        <!--END OF USD TO IDR-->
+    </div>
+        
+</body>
+</html>

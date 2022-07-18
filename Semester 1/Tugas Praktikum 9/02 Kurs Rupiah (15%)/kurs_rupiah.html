@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah - JavaScript</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table style="border: solid black; background-color: skyblue;">
+            <tr>
+                <th><label for="input">Masukan Nilai</label></th>
+                <th><label for="asing">Valas</label></th>
+                <th><label for="output">Nilai Rupiah</label></th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" id="input">
+                </td>
+                <td>
+                    <select id="asing" onchange="kurs()">
+                        <option value="">Pilih Mata Uang</option>
+                        <option value="USD">Dollar US</option>
+                        <option value="SGD">Dollar Singapore</option>
+                        <option value="RMA">Ringgit Malaysia</option>
+                        <option value="YJP">Yen Jepang</option>
+                        <option value="EUR">Euro</option>
+                        <option value="RAS">Riyal Arab Saudi</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" id="output" readonly>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function kurs(){
+        let input = document.getElementById("input").value;
+        let convert = document.getElementById("asing").value;
+        
+        let hasil = 0;
+        
+        if(convert == "USD"){
+               hasil = input * 9915;
+        }
+        else if(convert == "SGD"){
+               hasil = input * 13472;
+        }
+        else if(convert == "RMA"){
+               hasil = input * 874;
+        }
+        else if(convert == "YJP"){
+               hasil = input * 120;
+        }
+        else if(convert == "EUR"){
+               hasil = input * 15888;
+        }
+        else if(convert == "RAS"){
+               hasil = input * 3592;
+            }
+        else{
+            hasil = 0;
+        }
+
+
+        document.getElementById("output").value = String("Rp. " + hasil);
+    }
+    </script>
+</body>
+</html>

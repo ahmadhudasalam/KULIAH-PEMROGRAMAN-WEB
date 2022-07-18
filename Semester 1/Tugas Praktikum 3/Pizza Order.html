@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA ORDER</title>
+</head>
+<body>
+    <form action="https://blackgoosebistro.com/pizza.php" method="POST" target="_blank">
+        <table style="border: 1px solid black;background-image: url('https://64.media.tumblr.com/6b386cf4ea8b7deaa3819b7587c29723/d65889dc03f07d7d-a4/s640x960/775eee100c9d1025131f9d6aec1f8f936ff3e231.jpg');">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td style="text-align: left;" colspan="2"><h4><b>Black Goose Bistro Pizza-on-Demand</b></h4></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left;" colspan="2">
+                                <p>Our 12" wood-fired pizzas are available for delivery.
+                                <br>Build your custom pizza and we'll deliver it within an hour.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <caption style="text-align: left;">Your Information</caption>
+                                    <tr>
+                                        <td style="width: 35%;">Name</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="text" name="namecostumer" value="" size="30">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adress</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="text" name="adresscostumer" value="" size="30">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telephon Number</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="tel" name="telpcostumer" value="" size="30">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>:</td>
+                                        <td>
+                                            <input type="email" name="emailcostumer" value="" size="30">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Delivery Instructions</td>
+                                        <td colspan="2">:</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea name="Delivery Instructions" id="instructions" cols="45" rows="5" maxlength="400"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <b>Desain Your Pizza:</b>
+                                <br>Pizza Specs
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tr>
+                                        <td>Crust(Choose one):</td>
+                                        <td>Topping(Choose as many as you want):</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                                <input type="radio" name="crust" value="classicwhite">Classic white
+                                                <br>
+                                                <input type="radio" name="crust" value="multigrain">Multigrain
+                                                <br>
+                                                <input type="radio" name="crust" value="cheesestuffedcrust">Cheese-stufferd crust
+                                                <br>
+                                                <input type="radio" name="crust" value="glutenfree">Gluten free
+                                        </td>
+                                        <td>
+                                                <input type="checkbox" id="topping1" name="topping1" value="redsauce" checked>
+                                                <label for="topping1">Red sauce</label>
+                                                <br>
+                                                <input type="checkbox" id="topping2" name="topping2" value="whitesauce">
+                                                <label for="topping2">White sauce</label>
+                                                <br>
+                                                <input type="checkbox" id="topping3" name="topping3" value="mozarellacheese">
+                                                <label for="topping3">Mozarella Cheese</label>
+                                                <br>
+                                                <input type="checkbox" id="topping4" name="topping4" value="pepperoni">
+                                                <label for="topping4">Pepperoni</label>
+                                                <br>
+                                                <input type="checkbox" id="topping5" name="topping5" value="mushroom">
+                                                <label for="topping5">Mushroom</label>
+                                                <br>
+                                                <input type="checkbox" id="topping6" name="topping6" value="peppers">
+                                                <label for="topping6">Peppers</label>
+                                                <br>
+                                                <input type="checkbox" id="topping7" name="topping7" value="anchovies">
+                                                <label for="topping7">Anchovies</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Number
+                                <br>
+                                <select name="pizzaorders" id="pizzaorders">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;width: 100%;">
+                                <input type="reset" value="Reset">
+                            </td>
+                            <td style="text-align: right;">
+                                    <input type="submit" value="Bring me a pizza!">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style ala kadarnya */
+
+/* style header */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid black;
+}
+
+header {
+    background-color: rgb(211, 209, 209);
+    height: 75px;
+    border-bottom: solid black;
+}
+
+.kepala {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.head1 {
+    display: flex;
+}
+
+.head2 {
+    display: flex;
+    margin-right: 450px;
+}
+
+.head3 {
+    display: flex;
+}
+
+h1 {
+    font-size: 170%;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+}
+.ulnavhead {
+    list-style: none;
+    display: flex;
+    padding-right: 70px;
+}
+
+.liulnavhead {
+    margin-right: 5px;
+    font-size: 150%;
+}
+
+/* style main */
+main {
+    width: 95%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.main1 {
+    width: 70%;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table1 {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.table2 {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#apply {
+    background-color: white;
+    color: gray;
+}
+
+caption {
+    text-align: left;
+    font-size: 110%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    width: 55%;
+    font-size: 110%;
+}
+
+.main2 {
+    width: 25%;
+    background-color: rgb(211, 209, 209);
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.summary {
+    padding: 15px;
+}
+
+b {
+    font-weight: bold;
+}
+
+/* style footer */
+footer {
+    height: 75px;
+    border-top: solid black;
+}
+
+.foot1 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.ulnavfoot {
+    list-style: none;
+    display: flex;
+    padding-right: 550px;
+}
+
+.liulnavfoot {
+    font-size: 110%;
+    margin-right: 5px;
+}
+
+.foot2 {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 110%;
+}

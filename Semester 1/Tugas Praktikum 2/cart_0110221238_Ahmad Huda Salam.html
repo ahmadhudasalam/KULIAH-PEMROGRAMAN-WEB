@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - HTML Dasar</title>
+</head>
+<body style="font-family: Cambria; border: solid black;">
+    <header style="background-color: #d3d1d1; border-bottom: solid black;">
+        <div style="width: 95%; margin: auto; display: flex; justify-content: space-between; align-items: center;">
+            <section><h1>Site Name</h1></section>
+            <section>
+                <a href="#">Category 1 </a>|
+                <a href="#">Category 2 </a>|
+                <a href="#">Category 3</a>
+            </section>
+            <section><h1>Cart (1)</h1></section>
+        </div>
+    </header>
+    <main style="width: 95%; margin: auto; padding-top: 50px; padding-bottom: 50px; display: flex;">
+        <div style="width: 75%;">
+            <table style="width: 100%;">
+                <caption style="text-align: left;"><h1>Your Cart</h1></caption>
+                <tr>
+                    <td colspan="4" style="border-bottom: solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Item</td>
+                    <td style="width: 15%;">Price</td>
+                    <td style="width: 15%;">Quantity</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: solid black;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 0;">
+                        <img src="https://64.media.tumblr.com/c954d1d71e2b9178adc826d8ccb10388/33fcbd8269b0e8a5-36/s540x810/cde1c03fd7273f96ba24ec233cdf2f22a8a60cd4.jpg" alt="images" width="150" height="150">
+                    </td>
+                    <td>T-shirt<br>Size: Small</td>
+                    <td><h3>$20.00</h3></td>
+                    <td>
+                        <select name="quantity" id="quantity" style="width: 55%;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-bottom: solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;">Subtotal: <b>$20.00</b></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="border-top: solid black;"></td>
+                </tr>
+            </table>
+        </div>
+        <div style="width: 25%;">
+            <table style="width: 80%; margin: auto; background-color: #d4d4d4;">
+                <tr>
+                    <th colspan="2" style="text-align: left;">Summary (1 item)</th>
+                </tr>
+                <tr>
+                    <td>Subtotal</td>
+                    <td style="text-align: right;">$20.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td style="text-align: right;">-</td>
+                </tr>
+                <tr>
+                    <td>Est. Taxes</td>
+                    <td style="text-align: right;">-</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border-top: solid white;"></td>
+                </tr>
+                <tr>
+                    <td><b>Total</b></td>
+                    <td style="text-align: right;"><b>$20.00</b></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button style="background-color: #00f; color: white; width: 70%;">Checkout</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer style="border-top: solid black; padding: 15px;">
+        <div style="display: flex; justify-content: space-between; width: 95%; margin: auto;">
+            <section>Site name</section>
+            <section><a href="#" style="margin: 0 5px;">Category X</a>|
+                <a href="#" style="margin: 0 5px;">Category Y</a>|
+                <a href="#" style="margin: 0 5px;">Category Z</a>
+            </section>
+            <section>Stay In Touch! Join Our Newsletter.</section>
+        </div>
+        <div style="display: flex; justify-content: space-between; width: 95%; margin: auto;">
+            <section><b style="color: white; background-color: black;">VISA</b></section>
+            <section>
+                <input type="email" placeholder="Enter Email">
+                <input type="submit" value="Subscribe" style="color: white; background-color: gray;">
+            </section>
+        </div>
+    </footer>
+</body>
+</html>

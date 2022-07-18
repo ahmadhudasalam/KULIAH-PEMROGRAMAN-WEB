@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berita Mitra</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="assets/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="assets/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/img.css">
+  <link rel="icon" href="assets/pict/unknown.jpeg">
+</head>
+
+<body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-dark">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="kelola.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Lowongan Baru</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="detail_mitra.html" class="nav-link">Detail Mitra</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="tambah_mitra.html" class="nav-link">Daftarkan Mitra</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block active">
+          <a href="#" class="nav-link">Berita</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <div class="form-inline sidebar-dark-primary">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index3.html" class="brand-link">
+        <img src="assets/pict/unknown.jpeg" alt="Siloker NF" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">Siloker NF</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="assets/pict/unknown.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Administrator</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="kelola.html" class="nav-link">
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="detail_mitra.html" class="nav-link">
+                <p>
+                  Mitra
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                <p>
+                  Berita
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <p>
+                  Log out
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+            </div><!-- /.col -->
+            <div class="col-sm-6 pr-5">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item active">Berita</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <section class="content">
+        <div>
+          <div class="row mt-3">
+            <div class="col-9 ml-4">
+              <br id="1">
+              <br>
+              <br>
+              <a href="#">
+                <h4>STT Terpadu Nurul Fikri</h4>
+                <img src="assets/pict/mitra/mitra1.png" alt="Logo Kota Kode" class="img">
+              </a>
+              <p>Pada tanggal 8 Februari 2021, STT Terpadu Nurul Fikri bekerjasama dengan kotakode.com. Kotakode.com
+                adalah platform online untuk programmer Indonesia. STT Terpadu Nurul Fikri bekerjasama dengan Kota Kode
+                untuk menyediakan jawaban kepada para mahasiswa STT Nurul Fikri atas pertanyaan pemrograman sehari-hari
+                dan berbagi pengetahuan tentang dunia IT bersama ribuan programmer Indonesia lainnya yang selalu up to
+                date dengan perkembangan dunia IT di Indonesia. Yang nantinya dapat membangun reputasi online dan
+                nantinya bisa membantu karir Mahasiswa STT Nurul Fikri. Semua ini bisa dapatkan secara GRATIS! Selain
+                itu, masih banyak keuntungan lain yang akan Mahasiswa STT Nurul Fikri didapatkan, seperti:
+              </p>
+              <ul>
+                <li>Mendapatkan jawaban dari para profesional yang bekerja di perusahaan seperti Google, Gojek,
+                  Tokopedia, dll.</li>
+                <li>Mendapatkan akses ke programming mentor.</li>
+                <li>Menjadi bagian dari jaringan programmer profesional yang aktif dan terus berkembang di Indonesia.
+                </li>
+              </ul>
+              <p>
+                Khusus untuk mahasiswa STT Terpadu Nurul Fikri, diberikan hal spesial bila sudah bergabung akan
+                mendapatkan EXCLUSIVE BADGE STT Terpadu Nurul Fikri
+                <br><br>
+                <a href="#">#berita</a> <a href="#">#indonesia</a> <a href="#">#info</a> <a href="#">#kerjasama</a> <a
+                  href="#">#KotaKode</a> <a href="#">#kotakode.com</a> <a href="#">#mahasiswa</a> <a
+                  href="#">#mahasiswi</a> <a href="#">#online</a> <a href="#">#pemrograman</a>
+                <a href="#">#platform</a> <a href="#">#programmer</a> <a href="#">#sttnf</a> <a href="#">#teknologi</a>
+              </p>
+              <br id="2">
+              <br>
+              <br>
+              <a href="#">
+                <h4>STT Terpadu Nurul Fikri Bekerjasama di Bidang Akademik dengan Asia e University
+                </h4>
+                <img src="assets/pict/mitra/mitra2.png" alt="Logo Asia e University" class="img">
+              </a>
+              <p>
+                Senin (24/2), di ruang 207 Kampus B STT Terpadu Nurul Fikri. STT Terpadu Nurul Fikri menandatangani MoU
+                (Memorandum of Understanding) dengan Asia e University. MoU tersebut berkaitan dengan kerjasama di
+                bidang Akademik. Dari pihak STT Terpadu Nurul Fikri diwakili oleh Dr. Lukman Rosyidi, M.M., M.T dan Asia
+                e University diwakili oleh Professor Emeritus Dato' Dr. Hassan Said.
+                <br><br>
+                Asia e University merupakan Universitas Internasional yang berada di Kuala Lumpur, Malaysia. Kerjasama
+                tersebut mencakup pertukaran Pelajar, Dosen, atau kegiatan ilmiah lainnya seperti konferensi/penelitian.
+                Hal ini menjadi sebuah peluang yang harus dimanfaatkan dengan baik.
+                <br><br>
+                Asia e University juga menawarkan program kuliah double degree yaitu dengan menyelenggarakan kuliah
+                online sehingga mahasiswa tidak harus hadir dan bertatap muka dengan dosen. Program bertujuan memberi
+                kemudahan dalam menyelesaikan kuliah namun dengan tetap memperhatikan kualitas pembelajaran.
+                <br><br>
+                Kerjasama ini tidak berhenti pada tandatangan semata, akan tetapi terus dirumuskan apa saja yang perlu
+                dikembangkan dan dapat diimplementasikan oleh para dosen dan mahasiswa, seperti melakukan penelitian
+                bersama, dan pertukaran mahasiswa dan dosen.
+                <br><br>
+                Berdasarkan MoU yang tertulis Asia e University Malaysia siap memfasilitasi Mahasiswa, Dosen, dan
+                civitas akademika STT Terpadu Nurul Fikri untuk bisa mengikuti program-program Internasional Perguruan
+                Tinggi begitu juga sebaliknya.
+                <br><br>
+                Program pendidikan yang dibuka dalam kerjasama STT Terpadu Nurul Fikri dengan Asia e University
+                diantaranya:
+              <ol>
+                <li>Doctor of Philoshopy</li>
+                <li>Master in Information and Communication Technology Management</li>
+                <li>Master in Business Administration</li>
+                <li>Master in Management</li>
+                <li>Master in Education</li>
+                <li>Bachelor in Information and Communication Technology Management</li>
+                <li>Bachelor of Digital Creative Media</li>
+                <li>Bachelor of Business of Administration</li>
+                <li>Bachelor of Graphic Design</li>
+                <li>Bachelor of Education</li>
+                <li>Programmes of Mutual Interest</li>
+              </ol>
+              <br>
+              Harapannya, kerjasama yang dilakukan oleh STT Terpadu Nurul Fikri dengan Asia e University ini dapat
+              memberikan wawasan yang luas bagi para Mahasiswa STT Terpadu Nurul Fikri, pengalaman belajar di luar
+              negeri yang akan memberikan sebuah pelajaran baru, dan dapat melahirkan lulusan yang berkualitas dan bisa
+              bersaing di dunia Internasional.
+              <br><br>
+              <a href="#">#akademik</a> <a href="#">#asia</a> <a href="#">#internasional</a> <a href="#">#kerjasama</a>
+              <a href="#">#MoU</a> <a href="#">#penandatanganan</a> <a href="#">#sttnf</a> <a href="#">university</a>
+              </p>
+              <br id="3">
+              <br>
+              <br>
+              <a href="#">
+                <h4>Kerjasama Sekolah Tinggi Teknologi Terpadu Nurul Fikri dengan Kyoto University</h4>
+                  <img src="assets/pict/mitra/mitra3.png" alt="Logo Kyoto University" class="img">
+              </a>
+              <p>Tepat pada tanggal 25 September 2017 STT NF melakukan penandatanganan kerjasama (MoU) dengan
+                Laboratorium Physical Statistic Kyoto University terkait kolaborasi pendidikan yang meliputi kerjasama
+                riset, pertukaran informasi pendidikan, dsb. Profesor Umeno sebagai Kepala Laboratorium Physical
+                Statistic mengatakan bahwa perkembangan ilmu pengetahuan tidak dibatasi oleh batas batas negara.
+                Siapapun yang punya mimpi bisa mewujudkan mimpinya jika konsisten dalam kerangka pengembangan iptek.
+                <br>
+                <br>
+                Menurut beliau, di Jepang 13 tahun yang lalu social media belum banyak seperti sekarang, tapi ada
+                aplikasi sosial media yang disebut Mixi, yang ternyata dibuat pelajar indonesia di jepang, sehingga
+                social media Mixi pernah menjadi terpopuler di Jepang. Sosial media yang terbesar di Jepang itu berkat
+                iptek. Ini merupakan contoh bahwa dengan iptek dan mimpi yang besar, batas-batas negara, batas-batas
+                pendidikan, budaya, dsb bukan menjadi penghalang untuk menjadi lebih maju. Prof. Umeno mengatakan
+                kerjasama dengan Sekolah Tinggi Teknologi Terpadu Nurul Fikri diharapkan dapat menjadi titik awal kedua
+                pihak untuk lebih mengembangkan potensi dan mimpi bukan hanya untuk kedua institusi tapi bagi kedua
+                negara.
+                <br>
+                <br>
+                Dr. Rudi Lumanto, Ketua Yayasan Nurul Fikri dalam sambutannya mengatakan bahwa kerjasama dan kolaborasi
+                adalah sesuatu yang tidak bisa ditinggalkan di era sekarang. Dengan kolaborasi maka cara pandang akan
+                semakin luas, kemampuan memecahkan masalah menjadi semakin cepat dan akurat. Sekolah Tinggi Teknologi
+                Terpadu Nurul Fikri yang unggul dalam riset dan pengembangan bidang aplikasi mobile sangat berbangga
+                bisa melakukan kerjasama dengan Kyoto University.
+              </p>
+              <br id="4">
+              <br>
+              <br>
+              <a href="#">
+                <h4>STT Terpadu Nurul Fikri dan Telkom Tanda Tangani Perjanjian Kerjasama</h4>
+                <img src="assets/pict/mitra/mitra4.png" alt="Logo Telkom Indonesia" class="img">
+              </a>
+              <p>Senin (5/6/2017), STT Terpadu Nurul Fikri (STT NF) menandatangani perjanjian kerjasama dengan PT.
+                Telekomunikasi Indonesia, Tbk. (Telkom) di Auditorium Kampus B II STT Terpadu Nurul Fikri di Jl. Lenteng
+                Agung Raya No. 20 Jakarta Selatan. Penandatanganan kerjasama ini dilakukan oleh Ketua STT Terpadu Nurul
+                Fikri, AHADIYAT, M.M dan Executive General Manager Divisi Digital Service PT Telkom, ARIEF MUSTA'IN.
+                Dalam perjanjian tersebut kedua belah pihak sepakat untuk melaksanakan kerjasama penyelenggaraan program
+                Internship bagi Mahasiswa/Mahasiswi STT NF di TELKOM. Perjanjian ini dimaksudkan sebagai dasar
+                pelaksanaan kerjasama diantara Para Pihak dalam penyelenggaraan program Internship. Kerjasama dimaksud
+                Perjanjian ini bertujuan untuk menjalin kerjasama diantara Para Pihak untuk saling mendukung program dan
+                mengoptimalkan resource yang dimiliki masing-masing Pihak diantaranya sebagai berikut:
+              </p>
+              <ul>
+                <li>Memberikan kesempatan bagi Mahasiswa/Mahasiswi STT NF untuk magang di TELKOM.</li>
+                <li>Pemenuhan SDM bagi TELKOM dalam rangka mendukung pelasanaan pekerjaan oleh Mahasiswa/Mahasiswi STT
+                  NF yang magang.</li>
+              </ul>
+              <p>
+                Program Internship atau Magang merupakan bagian dari pelatihan kerja bagi mahasiswa atau Mahasiswi STT
+                NF tingkat akhir sebagai salah satu syarat untuk menyelesaikan proses pendidikan. Pada kesempatan yang
+                sama Bpk. ARIEF MUSTA'IN juga memberikan Kuliah Umum untuk Mahasiswa dan Mahasiswi STT NF dengan
+                bertemakan “Penguatan Skill dan Pengalaman lewat Program Internship Telkom".
+              </p>
+              <br id="5">
+              <br>
+              <br>
+              <a href="#">
+                <h4>Penandatanganan Kerjasama PT MMI - STTNF</h4>
+                <img src="assets/pict/mitra/mitra5.jpg" alt="Logo MMI" class="img">
+              </a>
+              <p>Tepat pada hari kamis tanggal 14 Agustus 2014 jam 14.00 telah ditandatangani kesepakatan kerjasama
+                antara PT Mitra mandiri Informatika dengan sekolah Tinggi Teknologi Terpadu Nurul Fikri untuk Training
+                dan Magang Kerja. Training dan Magang kerja yang akan dilaksanakan adalah bidang programming Java.
+                Penadatangan Kerjasama Training dan Magang Kerja dari pihak STT-NF diwakili oleh Ketua Sekolah Tinggi
+                Teknologi terpadu Nurul Fikri Bapak Drs. Rusmanto, MM, sedangkan dari Pihak PT Mitra Mandiri Informatika
+                diwakili oleh Ibu Sri Budi Hidayati. Dengan ditandatangani kesepakatan kerjasama oleh kedua belah pihak
+                ini maka masing-masing pihak sudah bisa melaksanakan kewajibannya masing-masing.
+                <br><br>
+                Melalui Pusat pengembangan karir atau dikenalnya dengan CDC STT-NF, Sekolah Tinggi Teknologi Terpadu
+                Nurul Fikri telah meluncurkan Program Pelatihan siap kerja yang dinamakan Program Link Match. Program
+                Link Match sudah berjalan 3 angkatan, dan ketiga angkatan tersebut materinya Programing Web. Untuk
+                angkatan ke 4 ini yang agak berbeda karena materinya adalah Java. Cukup berat dari sisi materi karena
+                tidak banyak kampus yang mengajarkan materi Java.
+                <br><br>
+                Walapun penandatangan kerjasama Training dan Magang ditanda tangani tanggal 14 Agustus 2014 namun
+                rekrutmen peserta sudah dimulai sejak tanggal 4 Agustus 2014. Sudah ada beberapa peserta yang wawancara
+                dan tes di STT-NF, yang selanjutnya nanti akan diwawancara berikutnya oleh Perusahaan jika dinyatakan
+                lolos di tes dan wawancara tahap pertama oleh pihak STT-NF.
+                <br><br>
+                Harapan kami dari STT-NF dengan dibukanya Program Link Match Angkatan ke 4 ini mampu memberikan
+                kesempatan kepada lulusan SMK, D3 dan S1 yang belum bekerja dan memiliki semangat belajar yang baik.
+                Karena dengan peningkatan pengangguran terdidik menunjukan bahwa ketiak mereka lulus belum bisa langsung
+                terjun di dunia kerja dan usaha. Mereka masih butuh pembekalan skill teknis, agar mampu bersaing di
+                dunia kerja terutama bidang Komputer yang terus berkembang. Jika perguruan tinggi atau sekolah tidak
+                mengikuti perkembangan yang ada maka lulusannya tidak siap untuk bekerja karena kebutuhan dengan hasil
+                lulusan tidak matching.
+                <br><br>
+                Semoga kerjasama antara PT MMI (Mitra mandiri Informatika) dengan STT-NF mampu menghasilkan
+                tenaga-tenaga kerja yang handal dan siap bekerja di bidang Teknik Informatika. Selamat dan Sukses buat
+                STT-NF, teruslah berkarya dan Berjuang untuk kemajuan bangsa.
+              </p>
+              <br id="6">
+              <br>
+              <br>
+              <a href="#">
+                <h4>STT Terpadu Nurul Fikri Jalin Mou dengan Sun Moon University Korea</h4>
+                <img src="assets/pict/mitra/mitra6.png" alt="Logo Sun Moon University" class="img">
+              </a>
+              <p>Untuk meningkatkan kualitas dari pada lulusan STT Terpadu Nurul Fikri, maka STT Terpadu Nurul Fikri
+                mengadakan kerjasama dengan Sun Moon University, Korea Selatan. Penanda tanganan kerjasama ini
+                dilaksanakan pada hari Jum'at, Tanggal 23 Oktober 2015 di Padang pada acara RAKORNAS APTIKOM 2015.
+                <br><br>
+                Kerjasama ini ditandatangani langsung oleh AHADIYAT, M.M selaku ketua STT Terpadu Nurul Fikri dengan Dr.
+                Kyung Oh Lee, Ph.D selaku Dekan, Internasional Affairs Sun Moon University, Korea Selatan.
+                <br><br>
+                Pada nota kesepahaman ini akan dilakukan :
+              </p>
+              <ol>
+                <li>Pengembangan program bersama.</li>
+                <li>Pertukaran kredit.</li>
+                <li>Pertukaran pascasarjana dan mahasiswa sarjana untuk studi lanjut dan penelitian.</li>
+                <li>Pertukaran dosen dan peneliti untuk penelitian, kuliah dan group diskusi.</li>
+                <li>Pertukaran informasi termasuk pertukaran bahasa pustaka dan publikasi penelitian.</li>
+                <li>Bersama konferensi, seminar dan lokakarya.</li>
+                <li>Kegiatan mahasiswa bersama.</li>
+                <li>Penggunaan bersama peralatan, fasilitas dan sumber daya.</li>
+              </ol>
+              <br id="7">
+              <br>
+              <br>
+              <a href="#">
+                <h4>Kerjasama Library STT Nurul Fikri bersama dengan NELITI (Repositori Ilmiah Indonesia)</h4>
+                <img src="assets/pict/mitra/mitra7.png" alt="Logo NELITI" class="img">
+              </a>
+              <p>Jakarta Pusat - Dalam rangka mendukung tridharma (pengajaran, penelitian, dan pengabdian masyarakat)
+                perguruan tinggi, perpustakaan STT Terpadu Nurul Fikri secara aktif mengembangkan informasi yang
+                dihimpunnya bagi civitas akademika. Bertempat di perpustakaan nasional Republik Indonesia 5 September
+                2018, perpustakaan STT Terpadu Nurul Fikri telah mengadakan diskusi dan kerjasama dalam bidang
+                penyediaan sumber informasi ilmiah dengan neliti.
+                <br><br>
+                Anton sebagai CEO mengatakan bahwa repositori ini dibuat untuk menghimpun seluruh artikel penelitian
+                ilmiah dengan harapan peneliti dapat dengan mudah mendapatkan artikel ilmiah yang dibutuhkannya. “Untuk
+                ke depannya neliti akan menyediakan repositori khusus bagi pustakawan atau organisasi yang ingin
+                menghimpun informasinya. Repositori ini masih tahap pengembangan.” imbuhnya.
+                <br><br>
+                Bagi perpustakaan diskusi dan kerjasama ini sangat bermanfaat sekali sebagai pintu gerbang gerakan
+                penelitian ilmiah khususnya di kalangan STT Terpadu Nurul Fikri. Harapan dengan adanya kerjasama ini
+                perpustakaan STT Terpadu Nurul Fikri semakin aktif menyediakan informasi ilmiah serta mendukung secara
+                penuh tridharma perguruan tinggi di STT Terpadu Nurul Fikri.
+              </p>
+              <br id="8">
+              <br>
+              <br>
+              <a href="#">
+                <h4>STT Terpadu Nurul Fikri Bekerjasama dengan Oracle Academy</h4>
+                <img src="assets/pict/mitra/mitra8.png" alt="Logo Oracle Academy" class="img">
+              </a>
+              <p>STT Terpadu Nurul Fikri telah bekerjasama dengan Oracle Academy. Tujuan diadakannya kerja sama dengan
+                Oracle Academy adalah agar para lulusan Teknik Informatika STT Mandala mendapatkan skill/keahlian yang
+                terkait dengan Database Management, Database Programming, Java Programming dan mengikuti perkembangan
+                teknologi, khususnya untuk produk yang dikeluarkan oleh Oracle, dan mendapatkan sertifikasi di bidang
+                ini.
+                <br><br>
+                Kegiatan kerja sama dimulai dengan memadukan kurikulum mata kuliah dengan kurikulum dari Oracle Academy.
+                Para mahasiswa yang mengambil kuliah yang terkait dan memenuhi syarat kelulusan yang telah ditetapkan,
+                akan mendapatkan nilai pada matakuliah ini dan sertifikat dari Oracle Academy. Sertifikat dari Oracle
+                Academy sudah diakui oleh perusahaan-perusahaan yang merekrut lulusan Ilmu Komputer.
+                <br><br>
+                5 Alasan untuk sertifikasi Oracle :
+              </p>
+              <ul>
+                <li>SKILL. Mendapatkan penguasaan kompetensi berstandar Internasional.</li>
+                <li>KARIR. Bergabung dengan para pemegang sertifikasi Oracle yang telah mendapatkan promosi kenaikan
+                  gaji atau peningkatan karir yang signifikan.</li>
+                <li>NETWORK. Belajar dari Tim yang terlibat langsung dalam Oracle Project.</li>
+                <li>FLEKSIBEL. Belajar dari mana saja dan kapan saja.</li>
+                <li>GARANSI. Lebih dari 99% peserta training Oracle menyatakan puas.</li>
+              </ul>
+              <p>
+                Dengan memiliki sertifikasi Oracle, maka bargaining power di pasar kerja juga akan makin tinggi. Dengan
+                pengetahuan dan pengalaman yang sama, pemegang sertifikat mempunyai lebih banyak peluang untuk
+                mendapatkan pekerjaan.
+              </p>
+            </div>
+            <div class="col-2 ml-5">
+              <ul class="list-group mt-5 pt-5">
+                  <li class="list-group-item disabled" aria-disabled="true">Link Berita Terbaru</li>
+                  <li class="list-group-item"><a href="#1">Nurul Fikri Bekerja sama dengan Kota Kode</a></li>
+                  <li class="list-group-item"><a href="#2">Nurul Fikri menandatangani MoU dengan Asia e
+                          University</a></li>
+                  <li class="list-group-item"><a href="#3">Nurul Fikri menandatangani MoU dengan Kyoto
+                          University</a></li>
+                  <li class="list-group-item"><a href="#4">Nurul Fikri Bekerja sama dengan Telkom
+                          Indonesia</a></li>
+                  <li class="list-group-item"><a href="#5">Nurul Fikri Bekerja sama dengan MMI</a></li>
+                  <li class="list-group-item"><a href="#6">Nurul Fikri menandatangani MoU dengan Sun Moon
+                          University</a></li>
+                  <li class="list-group-item"><a href="#7">Nurul Fikri Bekerja sama dengan Neliti</a></li>
+                  <li class="list-group-item"><a href="#8">Nurul Fikri Bekerja sama dengan Oracle Academy</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <strong>Created by <a href="https://adminlte.io">Mahasiswa STT NF</a>.</strong>
+        <div class="float-right d-none d-sm-inline-block">
+          <b>Version</b> 3.1.0
+        </div>
+      </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="assets/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/js/adminlte.js"></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="assets/js/jquery.mousewheel.js"></script>
+    <script src="assets/js/raphael.min.js"></script>
+    <script src="assets/js/jquery.mapael.min.js"></script>
+    <script src="assets/js/usa_states.min.js"></script>
+    <!-- ChartJS -->
+    <script src="assets/js/Chart.min.js"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="oioioi/dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="oioioi/dist/js/pages/dashboard2.js"></script>
+</body>
+
+</html>

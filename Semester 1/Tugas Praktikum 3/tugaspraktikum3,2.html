@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pesanan - HTML Dasar</title>
+</head>
+<body style="width: 80%; margin: auto;">
+    <form action="" enctype="multipart/form-data">
+    <nav style="border: 1px solid black; margin-top: 25px; margin-bottom: 25px;">
+        <ul style="list-style: none; display: flex; justify-content: space-between; padding-right: 30px; padding-left: 30px;">
+            <li><a href="" style="text-decoration: none; color: black;">Home</a></li>
+            <li>|</li>
+            <li><a href="" style="text-decoration: none; color: black;">Generate Link</a></li>
+            <li>|</li>
+            <li><a href="" style="text-decoration: none; color: black;">Transaction History</a></li>
+            <li>|</li>
+            <li><a href=""style="text-decoration: none; color: black;">Policy</a></li>
+            <li>|</li>
+            <li><a href="" style="text-decoration: none; color: black;">Logout</a></li>
+        </ul>
+    </nav>
+    <main style="display: flex; margin-top: 25px; margin-bottom: 25px;">
+        <div style="margin-right: 75px;">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li><img src="https://64.media.tumblr.com/4bd91a02837a0524113eddfed01dfa63/bf1ce624de1be265-cf/s1280x1920/8a878d7e686f5ecdebc3622919bdd2526bb4fea5.png" alt="inifoto" width="300" height="300" style="border: thick solid black;"></li>
+                <li><input type="file" name="photo"></li>
+            </ul>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>Title Here</td>
+                    <td>:</td>
+                    <td><input type="text" name="barang" size="50" placeholder="MacBook Air$800"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>:</td>
+                    <td><textarea name="deskripsi" id="" cols="50" rows="3" maxlength="100" placeholder=""></textarea></td>
+                </tr>
+                <tr>
+                    <td>Account Number</td>
+                    <td>:</td>
+                    <td><input type="text" size="50"  placeholder="123-456-789-0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bank</td>
+                    <td>:</td>
+                    <td><input type="text" list="bank" name="bank" size="40" placeholder="HSBC">
+                        <datalist id="bank">
+                            <option value="HSBC"></option>
+                            <option value="BCA"></option>
+                            <option value="BNI"></option>
+                            <option value="BRI"></option>
+                            <option value="Mandiri"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Account Holder</td>
+                    <td>:</td>
+                    <td><input type="text" size="35" placeholder="Name Here"></td>
+                </tr>
+                <tr>
+                    <td>Transaction</td>
+                    <td>:</td>
+                    <td><input type="number" min="1" max="5" placeholder="1">
+                        <br>*if the transaction is for 3 person, choose 3 form the drop-down list
+                        <br><input type="checkbox" id="sendtophone">
+                            <label for="sendtophone" style="color: green;">Send to Mobile Phone</label>
+                        <br><input type="checkbox" id="sendtomail">
+                            <label for="sendtomail" style="color: green;">Send to Mobile Phone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Send to Mobile Phone</td>
+                    <td>:</td>
+                    <td><input type="tel" size="35" placeholder="123456789, 1234567891"></td>
+                </tr>
+                <tr>
+                    <td>Send to Email</td>
+                    <td>:</td>
+                    <td><input type="email" size="35" placeholder="mfmm2g13@soton.ac.uk, fys_06@yahoo.com"></td>
+                </tr>
+                <tr>
+                    <td><br><br><br><br><br></td>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Generate Nabr Link" style="background-color: green; color: white;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    </form>
+</body>
+</html>

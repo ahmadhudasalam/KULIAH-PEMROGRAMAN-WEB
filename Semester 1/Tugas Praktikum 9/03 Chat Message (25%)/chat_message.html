@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Message - JavaScript</title>
+</head>
+
+<!--CSS-->
+<style>
+    .container{
+        width: 70%;
+    }
+    
+    #result{
+            width: 100%;
+            height: 300px;
+            border: 1px solid black;
+            font-family: cursive;
+            overflow: auto;
+    }
+    input{
+        width:90%;
+        height: 32px;
+        font-size: 24px;
+        font-family: cursive;
+    }
+    button{
+        width: 10%;
+        height: 37px;
+        font-family: cursive;
+        color: white;
+        background-color: red;
+    }
+    .chat{
+        display: flex;
+    }
+</style>
+<!--AKHIR CSS-->
+
+
+<body>
+    <div class="container">
+        <div id="result"></div>
+        <div class="chat">
+            <input type="text" id="type" placeholder="Ketik pesan" size="50">
+            <button id="send">Kirim</button>
+        </div>
+    </div>
+    
+
+<!--jAVASCRIPT-->
+<script>
+
+    //-----------------SCRIPT 1--------------------
+
+    //const result = document.getElementById("result");
+    //const typing = document.getElementById("type");
+    //const sending = document.getElementById("send");
+
+    //sending.addEventListener("click", function(){
+        //result.innerHTML = result.innerHTML + typing.value + "<br><br>";
+        //typing.value ="";
+
+    //style tampilan chat
+    //result.style.color = "red";
+    //result.style.fontWeight = "bold";
+    //result.style.fontFamily = "cursive";
+    //result.style.fontSize = "24px";
+    //})
+
+    //------------------SCRIPT 2--------------------
+    const result = document.getElementById('result');
+    const typing = document.getElementById('type');
+    const sending = document.getElementById('send');
+
+    sending.onclick = function(){
+    const p = document.createElement("P");
+    result.appendChild(p);
+    p.innerHTML = typing.value;
+
+    //style tampilan chat
+    result.style.color = "red";
+    result.style.fontWeight = "bold";
+    result.style.fontFamily = "cursive";
+    result.style.fontSize = "24px";
+}
+</script>
+<!--AKHIR JAVASCRIPT-->
+</body>
+</html>

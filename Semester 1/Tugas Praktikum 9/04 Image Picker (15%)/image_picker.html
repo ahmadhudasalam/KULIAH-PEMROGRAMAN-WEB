@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker - JavaScript</title>
+    <style>
+        *{ text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Pilih Gambar</h1>
+    <select name="" id="logo" onchange="imgPicker()">
+        <option value="">--Pilih Klub--</option>
+        <option value="TOT">Tottenham Hotspurs</option>
+        <option value="LEI">Leicester City</option>
+        <option value="ARS">Arsenal</option>
+        <option value="EVE">Everton</option>
+        <option value="MCI">Manchester City</option>
+        <option value="CHE">Chelsea</option>
+        <option value="NEW">Newcastle United</option>
+        <option value="SUN">Sunderland</option>
+        <option value="MCU">Manchester United</option>
+        <option value="LIV">Liverpool</option>
+    </select>
+    <div id="result" style="margin-top: 2em;"></div>
+
+    <script>
+        function imgPicker(){
+            let logo = document.getElementById('logo').value;
+
+            if(logo == "TOT"){
+                document.getElementById('result').innerHTML = ('<img src="img/tottenham.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Tottenhan Hotspurs');
+            }
+            else if(logo == "LEI"){
+                document.getElementById('result').innerHTML = ('<img src="img/leicester.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Leicester City');
+            }
+            else if(logo == "ARS"){
+                document.getElementById('result').innerHTML = ('<img src="img/arsenal.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Arsenal');
+            }
+            else if(logo == "EVE"){
+                document.getElementById('result').innerHTML = ('<img src="img/everton.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Everton');
+            }
+            else if(logo == "MCI"){
+                document.getElementById('result').innerHTML = ('<img src="img/mancity.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Manchester City');
+            }
+            else if(logo == "CHE"){
+                document.getElementById('result').innerHTML = ('<img src="img/chelsea.png" alt="" width="500" height="281">');
+                alert('Ini Gambar Chelsea');
+            }
+            else if(logo == "NEW"){
+                document.getElementById('result').innerHTML = ('<img src="img/newcastle.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Newcastle United');
+            }
+            else if(logo == "MCU"){
+                document.getElementById('result').innerHTML = ('<img src="img/manunited.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Newcastle United');
+            }
+            else if(logo == "SUN"){
+                document.getElementById('result').innerHTML = ('<img src="img/sunderland.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Sunderland');
+            }
+            else if(logo == "LIV"){
+                document.getElementById('result').innerHTML = ('<img src="img/liverpool.jpg" alt="" width="500" height="281">');
+                alert('Ini Gambar Liverpool');
+            }
+            else{
+                alert('Ini bukan pilihan');
+            }
+
+        return imgPicker;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 4 - JavaScript</title>
+    <script>
+        function jumlah(){
+            let bil1 = Number(document.getElementById("bil1").value);
+            let bil2 = Number(document.getElementById("bil2").value);
+            let bil3 = Number(document.getElementById("bil3").value);
+            let hasil = bil1 + bil2;
+            document.getElementById("bil3").value = hasil;
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="bil1" onchange="jumlah()">
+    +
+    <input type="number" id="bil2" onchange="jumlah()">
+    =
+    <input type="number" id="bil3" onchange="jumlah()">
+</html>

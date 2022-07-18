@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 1 - JavaScript</title>
+    <script>
+        function hitungluas(){
+            const phi = 3.14
+            let jari = document.getElementById("bill").value;
+            console.log("jari = " + jari);
+            let luas = phi * jari * jari;
+            console.log("luas = " + luas);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "Luas = " + luas;
+        }
+        function hitungkeliling(){
+            const phi = 3.14
+            let jari = document.getElementById("bill").value;
+            console.log("jari = " + jari);
+            let keliling = phi * 2.0 *jari;
+            console.log("keliling = " + keliling);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML ="Keliling = " + keliling;
+        }
+    </script>
+</head>
+<body>
+    <h2>Menghitung Luas dan Keliling Lingkaran</h2>
+    <div>Masukan jari-jari Lingkaran</div>
+    <div>
+        <input type="number" id="bill" size="15">
+    </div>
+    <div style="margin-top: 1em;">
+        <button onclick="hitungluas()">Hitung Luas</button>
+        <button onclick="hitungkeliling()">Hitung Keliling</button>
+    </div>
+    <div style="margin-top: 1em;">
+        <span id="hasil" style="font-weight: bold; color: red; font-size: 30px;"></span>
+    </div>
+</body>
+</html>
